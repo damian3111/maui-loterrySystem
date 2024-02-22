@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowania.Views.AddStudent"
+             Title="Add Student"
+             BackgroundColor="#f0f0f0">
+
+    <StackLayout Padding="20" Spacing="20">
+        <Frame CornerRadius="10" HasShadow="True" BackgroundColor="White">
+            <StackLayout Padding="20" Spacing="10">
+                <Label Text="First Name" FontSize="18" TextColor="Black" VerticalOptions="Center"/>
+                <Entry x:Name="firstname" Placeholder="Enter first name" FontSize="18" VerticalOptions="Center"/>
+                <Label Text="Last Name" FontSize="18" TextColor="Black" VerticalOptions="Center"/>
+                <Entry x:Name="lastname" Placeholder="Enter last name" FontSize="18" VerticalOptions="Center"/>
+                <Label Text="Class" FontSize="18" TextColor="Black" VerticalOptions="Center"/>
+                <Picker x:Name="classPicker" FontSize="18" VerticalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1A</x:String>
+                            <x:String>2A</x:String>
+                            <x:String>3A</x:String>
+                            <x:String>4A</x:String>
+                            <x:String>5A</x:String>
+                            <x:String>1B</x:String>
+                            <x:String>2B</x:String>
+                            <x:String>3B</x:String>
+                            <x:String>4B</x:String>
+                            <x:String>5B</x:String>
+                            <x:String>1C</x:String>
+                            <x:String>2C</x:String>
+                            <x:String>3C</x:String>
+                            <x:String>4C</x:String>
+                            <x:String>5C</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+        </Frame>
+
+        <Button x:Name="btnUpdate" Text="Add Student" Clicked="btnCreate_Clicked" BackgroundColor="#007bff" TextColor="White" CornerRadius="10"/>
+        <Button x:Name="btnCancel" Text="Cancel" Clicked="btnCancel_Clicked" BackgroundColor="#dc3545" TextColor="White" CornerRadius="10"/>
+    </StackLayout>
+
+</ContentPage>

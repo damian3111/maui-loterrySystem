@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowania.Views.Students"
+             Title="Students"
+             BackgroundColor="#f0f0f0">
+
+    <Grid RowDefinitions="*, Auto, Auto" ColumnDefinitions="*">
+        <ListView x:Name="listContacts" BackgroundColor="Transparent" ItemSelected="listCategories_ItemSelected"  RowHeight="100">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ContentView BackgroundColor="White" Padding="15" Margin="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Spacing="10" VerticalOptions="Center">
+                                    <Label Text="{Binding Firstname}" FontSize="18" TextColor="Black" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding Lastname}" FontSize="18" TextColor="Black" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding Class}" FontSize="18" TextColor="Black" HorizontalOptions="Start"/>
+                                </StackLayout>
+
+                                <Button Text="Update" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" Clicked="updateStudent" CommandParameter="{Binding Id}" BackgroundColor="#007bff" TextColor="White" Padding="10,5" CornerRadius="5"/>
+                            </Grid>
+                        </ContentView>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- First Button -->
+        <Button Text="Add Student" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Clicked="btnAddCategory_Clicked" BackgroundColor="#28a745" TextColor="White" Margin="20" Padding="10" CornerRadius="10"/>
+
+        <!-- Second Button -->
+        <Button Text="Random Student" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center" Clicked="randomStudent" BackgroundColor="#007bff" TextColor="White" Margin="20" Padding="10" CornerRadius="10"/>
+    </Grid>
+</ContentPage>

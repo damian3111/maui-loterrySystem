@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowania.MainPage">
+
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto"
+          ColumnDefinitions="*, *, *">
+
+        <!-- Buttons in the first column -->
+        <Button x:Name="btnAdd1" Text="1A" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="1F" Grid.Row="0" Grid.Column="0" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd2" Text="2A" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="1" Grid.Column="0" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd32" Text="3A" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="2" Grid.Column="0" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd23" Text="4A" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="3" Grid.Column="0" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd233" Text="5A" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="4" Grid.Column="0" Margin="10" CornerRadius="10"/>
+        <!-- Add more buttons as necessary -->
+
+        <!-- Buttons in the second column -->
+        <Button x:Name="btnAdd11" Text="1B" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="1F" Grid.Row="0" Grid.Column="1" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd12" Text="2B" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="1" Grid.Column="1" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd122" Text="3B" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="2" Grid.Column="1" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd12e2" Text="4B" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="3" Grid.Column="1" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd12r42" Text="5B" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="4" Grid.Column="1" Margin="10" CornerRadius="10"/>
+        <!-- Add more buttons as necessary -->
+        <Button x:Name="btnAdd113" Text="1C" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="1F" Grid.Row="0" Grid.Column="2" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd123" Text="2C" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="1" Grid.Column="2" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd1232" Text="3C" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="2" Grid.Column="2" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd123e2" Text="4C" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="3" Grid.Column="2" Margin="10" CornerRadius="10"/>
+        <Button x:Name="btnAdd12r342" Text="5C" Clicked="btnAddCategory_Clicked" BackgroundColor="#3498db" TextColor="White" CommandParameter="2F" Grid.Row="4" Grid.Column="2" Margin="10" CornerRadius="10"/>
+
+        <!-- Add more buttons for other columns -->
+
+    </Grid>
+
+</ContentPage>
