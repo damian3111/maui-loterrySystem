@@ -77,21 +77,17 @@ public partial class Students : ContentPage
     {
         if (e.SelectedItem != null)
         {
-            // Assuming your Student class has a property called "Firstname"
             Student selectedStudent = (Student)e.SelectedItem;
             string id = selectedStudent.Id;
 
             Student studentToRemove = students.Find(s => s.Id == id);
 
-            // If the student with the given id is found, remove it from the list
             if (studentToRemove != null)
             {
                 studentIds.Remove(studentToRemove.Id);
                 DisplayAlert($"Selected {studentToRemove.Firstname}", $" {studentToRemove.Firstname}, {studentToRemove.Lastname}, {studentToRemove.Class}", "OK");
 
             }
-            // Now you can use "firstname" as needed
-            // For example, display it in a message box
         }
     }
 
@@ -99,7 +95,6 @@ public partial class Students : ContentPage
     {
         Button button = (Button)sender;
 
-        // Get the binding context of the button, which should be the Student object
         string id = (String)button.CommandParameter;
 
 

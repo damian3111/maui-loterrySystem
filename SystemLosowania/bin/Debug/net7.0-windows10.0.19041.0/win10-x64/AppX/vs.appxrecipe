@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\damia\source\repos\SystemLosowania\SystemLosowania\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-02-22T08:47:24.515</Modified>
+      <Modified>2024-02-29T16:25:56.929</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\damia\source\repos\SystemLosowania\SystemLosowania\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SystemLosowania.dll">
       <PackagePath>SystemLosowania.dll</PackagePath>
-      <Modified>2024-02-11T16:55:11.768</Modified>
+      <Modified>2024-02-29T16:25:54.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\damia\source\repos\SystemLosowania\SystemLosowania\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>SystemLosowania.exe</PackagePath>
-      <Modified>2024-02-11T16:55:11.802</Modified>
+      <Modified>2024-02-29T16:25:54.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\damia\source\repos\SystemLosowania\SystemLosowania\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\SystemLosowania.deps.json">
       <PackagePath>SystemLosowania.deps.json</PackagePath>

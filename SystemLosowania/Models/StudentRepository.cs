@@ -50,7 +50,7 @@ namespace SystemLosowania.Models
             try
             {
                 var path = FileSystem.Current.AppDataDirectory;
-                var filePath = Path.Combine(path, "students.xml");
+                var filePath = Path.Combine(path, "students.txt");
                 XDocument xdoc = XDocument.Load(filePath);
 
                 var studentElements = xdoc.Root.Elements("Student");
@@ -80,7 +80,7 @@ namespace SystemLosowania.Models
         {
 
             var path = FileSystem.Current.AppDataDirectory;
-            var filePath = Path.Combine(path, "students.xml");
+            var filePath = Path.Combine(path, "students.txt");
             try
             {
                 XDocument xdoc;
@@ -114,7 +114,7 @@ namespace SystemLosowania.Models
         public static void RemoveProductFromXml(string studentId)
         {
             var path = FileSystem.Current.AppDataDirectory;
-            var filePath = Path.Combine(path, "students.xml");
+            var filePath = Path.Combine(path, "students.txt");
 
             try
             {
